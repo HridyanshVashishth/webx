@@ -1,0 +1,660 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f0e6; /* Earthy background */
+    color: #3d3b30; /* Earthy text */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Smooth scroll between sections */
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #8b7d6b;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+}
+
+/* Navigation */
+nav {
+    background-color: #a6937c;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #f1e3d8; /* Lighter hover color */
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 20px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Traditional and Modern Content */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tradition-img, .modern-img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 45%;
+    cursor: pointer; /* Cursor changes on hover */
+    transition: transform 0.3s ease;
+}
+
+.tradition-img:hover, .modern-img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Feedback Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form button {
+    background-color: #8b7d6b;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #6f5d4d;
+}
+
+/* Modal for image display */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 70%;
+    margin-top: 10%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #8b7d6b;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animation for dynamic elements */
+.dynamic-img {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+/* Home Section */
+#home {
+    background-color: #f4f0e6; /* Earthy background */
+    padding: 50px 20px;
+    text-align: center; /* Centering content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the home section takes full viewport height */
+}
+
+.home-container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-image {
+    width: 70%; /* Image will take 70% of the container width */
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-content {
+    color: #3d3b30;
+    font-family: Arial, sans-serif;
+}
+
+.home-content h2 {
+    font-size: 2.5rem;
+    color: #6f5d4d;
+    margin-bottom: 15px;
+}
+
+.home-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #8b7d6b;
+}
+
+.home-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.home-content h4 {
+    font-size: 1.25rem;
+    color: #6f5d4d;
+    margin-top: 20px;
+}
+/* Background Section */
+#background {
+    background-color: #f4f0e6; /* Earthy background */
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the section takes full viewport height */
+}
+
+.background-container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background-image {
+    width: 70%; /* Image will take 70% of the container width */
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.background-content {
+    color: #3d3b30;
+    font-family: Arial, sans-serif;
+}
+
+.background-content h2 {
+    font-size: 2.5rem;
+    color: #6f5d4d;
+    margin-bottom: 15px;
+}
+
+.background-content h4 {
+    font-size: 1.25rem;
+    color: #6f5d4d;
+    margin-top: 20px;
+}
+
+.background-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+/* Traditional Section */
+#traditional {
+    background-color: #f9f5ee; /* Earthy background */
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.traditional-container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row; /* Flexbox to align image and content */
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.traditional-image {
+    width: 45%; /* Image takes 45% of the section width */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 20px; /* Space between image and content */
+}
+
+.traditional-content {
+    width: 55%; /* Content takes 55% of the section width */
+    color: #3d3b30;
+    font-family: Arial, sans-serif;
+}
+
+.traditional-content h2 {
+    font-size: 2rem;
+    color: #6f5d4d;
+    margin-bottom: 15px;
+}
+
+.traditional-content h4 {
+    font-size: 1.25rem;
+    color: #6f5d4d;
+    margin-top: 20px;
+}
+
+.traditional-content p, .traditional-content ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.traditional-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+/* Modern Section */
+#modern {
+    background-color: #f9f5ee; /* Earthy background */
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.modern-container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row; /* Default layout with content left and image right */
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.modern-image {
+    width: 45%; /* Image takes 45% of the section width */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 20px; /* Space between image and content */
+}
+
+.modern-content {
+    width: 55%; /* Content takes 55% of the section width */
+    color: #3d3b30;
+    font-family: Arial, sans-serif;
+}
+
+.modern-content h2 {
+    font-size: 2rem;
+    color: #6f5d4d;
+    margin-bottom: 15px;
+}
+
+.modern-content h4 {
+    font-size: 1.25rem;
+    color: #6f5d4d;
+    margin-top: 20px;
+}
+
+.modern-content p, .modern-content ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.modern-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+/* Conclusion Section */
+#conclusion {
+    background-color: #ece3d1; /* Soft earthy tone */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.conclusion-container {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #3d3b30;
+    font-family: 'Georgia', serif;
+}
+
+.conclusion-container h2 {
+    font-size: 2.2rem;
+    color: #5f4a3b;
+    margin-bottom: 20px;
+}
+
+.conclusion-container p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #403a33;
+    margin-bottom: 30px;
+}
+
+.conclusion-container p:last-of-type {
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #6f5d4d;
+}
+/* Conclusion Section */
+#conclusion {
+    background-color: #ece3d1; /* Soft earthy tone */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.conclusion-container {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #3d3b30;
+    font-family: 'Georgia', serif;
+}
+
+.conclusion-container h2 {
+    font-size: 2.2rem;
+    color: #5f4a3b;
+    margin-bottom: 20px;
+}
+
+.conclusion-container p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #403a33;
+    margin-bottom: 30px;
+}
+
+.conclusion-container p:last-of-type {
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #6f5d4d;
+}
+
+/* Centering the Image */
+.conclusion-image {
+    display: block;
+    margin: 20px auto; /* Center the image horizontally */
+    max-width: 100%;   /* Ensure the image scales responsively */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Add shadow and background color on hover */
+.home-image:hover {
+    transform: scale(1.05); /* Slight zoom */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Add shadow */
+    border: 3px solid #ff6600; /* Change border color */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+/* Add shadow and background color on hover */
+.background-image:hover {
+    transform: scale(1.05); /* Slight zoom */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Add shadow */
+    border: 3px solid #ff6600; /* Change border color */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+/* Add shadow and background color on hover */
+.traditional-image:hover {
+    transform: scale(1.05); /* Slight zoom */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Add shadow */
+    border: 3px solid #ff6600; /* Change border color */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+/* Add shadow and background color on hover */
+.modern-image:hover {
+    transform: scale(1.05); /* Slight zoom */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Add shadow */
+    border: 3px solid #ff6600; /* Change border color */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+/* Add shadow and background color on hover */
+.how-to-presrve-image:hover {
+    transform: scale(1.05); /* Slight zoom */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Add shadow */
+    border: 3px solid #ff6600; /* Change border color */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+/* Add shadow and background color on hover */
+.conclusion-image:hover {
+    transform: scale(1.05); /* Slight zoom */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Add shadow */
+    border: 3px solid #ff6600; /* Change border color */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.feedback-form {
+    position: relative;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid transparent;
+    background-clip: padding-box;
+}
+
+.feedback-form::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    border-radius: 10px;
+    animation: borderColorChange 5s infinite;
+}
+
+@keyframes borderColorChange {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+#how-to-preserve {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px; /* Adjust the max width as necessary */
+    background-color: #f9f9f9; /* Light background for the section */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-box {
+    background-color: #fff; /* White background for content boxes */
+    border: 2px solid #FF7F50; /* Coral border */
+    border-radius: 8px;
+    margin: 15px 0; /* Space between boxes */
+    padding: 15px; /* Padding inside the box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-item {
+    margin-bottom: 10px; /* Space between content items */
+}
+
+.content-item h4 {
+    margin-bottom: 5px; /* Space below headings */
+    color: #2C3E50; /* Darker color for headings */
+}
+
+h3 {
+    color: #FF6347; /* Tomato color for section headings */
+}
+.image-container {
+    text-align: center; /* Center the image */
+    margin: 20px 0; /* Margin around the image */
+}
+
+.preserve-image {
+    width: 80%; /* Adjust width as necessary */
+    max-width: 500px; /* Maximum width to prevent it from getting too large */
+    height: auto; /* Keep the aspect ratio */
+    border: 4px solid transparent; /* Initial border for the effect */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the image */
+    transition: transform 0.3s, border-color 0.3s; /* Animation effects */
+}
+
+.preserve-image:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    border-color: #FF7F50; /* Change border color on hover */
+    animation: border-move 1s infinite; /* Apply border animation */
+}
+
+@keyframes border-move {
+    0% {
+        border-color: #FF7F50;
+    }
+    25% {
+        border-color: #FF6347;
+    }
+    50% {
+        border-color: #FF4500;
+    }
+    75% {
+        border-color: #FF8C00;
+    }
+    100% {
+        border-color: #FF7F50;
+    }
+}
+#acknowledgement {
+    background-color: #f9f9f9; /* Light background for the section */
+    padding: 20px; /* Padding around the section */
+    text-align: center; /* Center the text */
+}
+
+.image-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the images */
+    gap: 20px; /* Space between the images */
+    margin-bottom: 20px; /* Margin below the images */
+}
+
+.acknowledgement-image {
+    width: 45%; /* Set width of each image */
+    max-width: 300px; /* Max width to avoid oversized images */
+    height: auto; /* Keep aspect ratio */
+    border: 4px solid transparent; /* Initial border for the effect */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the images */
+    transition: transform 0.3s, border-color 0.3s; /* Animation effects */
+}
+
+.acknowledgement-image:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    border-color: #FF7F50; /* Change border color on hover */
+    animation: border-move 1s infinite; /* Apply border animation */
+}
+.container {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#load-more-btn {
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#load-more-btn:hover {
+    background-color: #bab86c;
+}
+.button-3d {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px #666;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button-3d:hover {
+    background-color: #555;
+    box-shadow: 0 2px #444;
+    transform: translateY(2px);
+}
+
