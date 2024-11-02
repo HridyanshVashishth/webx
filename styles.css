@@ -658,3 +658,11 @@ h3 {
     transform: translateY(2px);
 }
 
+.credits{
+    text-align: center;
+}
+
+.sch_name{
+    text-align: center;
+}
+
